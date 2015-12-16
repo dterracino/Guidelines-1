@@ -5,16 +5,18 @@ These guidelines are intended to be general enough to be applicable for most pro
 Generally these guidelines are intended for new projects.
 Existing projects may be able to make use of some of these guidelines and should be modified where reasonable to comply.
 
-## Guidelines for Specific [Languages][1]
+## General Guidelines
 
- * [C\#][2]
- * [JS][3]
- * [SQL][4]
+There are several [General Guidelines](General.md) intended for use in any project or language.
 
-[1]: Languages/README.md
-[2]: Languages/CSharp/README.md
-[3]: Languages/Javascript/README.md
-[4]: Languages/SQL/README.md
+## Guidelines for Specific [Languages](Languages/README.md)
+
+These are guidelines that each apply only to specific languages, but should apply to any use case for those languages.
+
+ * [C\#](Languages/CSharp/README.md)
+ * [JS](Languages/Javascript/README.md)
+ * [CSS](Languages/CSS/README.md)
+ * [SQL](Languages/SQL/README.md)
 
 ## TODO
 
