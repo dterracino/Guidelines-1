@@ -23,15 +23,17 @@ Rules specific to writing Angular js.
  1.  Never use jQuery selectors - `$('#id')` - inside an angular context. This includes anywhere in controllers, services, or directives. Any DOM manipulation needs to be done through changes to `$scope` properties or directives (which should primarily be using `$scope` properties as well).
  2.  Define all angular components (controllers, services, constants, directives, etc.) before passing them into the associated call on the angular module. [Example](Javascript-Angular-Rule-02.js)
  3.  Define all angular components (controllers, services, constants, directives, etc.) inside an immediately invoked function. [Example](Javascript-Angular-Rule-03.js)
- 4.  Do not directly reference anything in the table below, use the angular service instead.
+ 4.  Do not directly reference global symbols in Angular code. Broweser-provided globals have wrapper services provided by the Angular core library. Many other popular libraries
 
-         Forbidden Reference | Angular Service
-        ---------------------|-----------------
-        window               | $window
-        document             | $document
-        setInterval()        | $interval
-        setTimeout()         | $timeout
-        console              | $log
+         Forbidden Reference | Angular Service              | Library URL
+        ---------------------|------------------------------|-----------------
+        window               | $window   (Angular)          | N/A
+        document             | $document (Angular)          | N/A
+        setInterval()        | $interval (Angular)          | N/A
+        setTimeout()         | $timeout  (Angular)          | N/A
+        console              | $log      (Angular)          | N/A
+		$() or other JQuery  | N/A		 (See #1 Above)     | N/A
+		moment               | $moment   (angular-momentjs) | https://www.npmjs.com/package/angular-momentjs
 
  5.  Only use prototypes for angular components (such as controllers) when there is another component defined in the same scope (same file) that actually uses the first component as its prototype. Otherwise do not use prototypes.
  
