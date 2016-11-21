@@ -73,6 +73,7 @@ In cases where any one rule does not apply or cannot be implemented make best ef
        - `readonly`
        - writable (non-`readonly`)
  17. Prefer using extension methods to static utility methods when possible. [Example](CSharp-17.cs)
+ 18. Include trailing commas in enums and collection initializers. [Example](CSharp-18.cs)
 
 ## C\# - Models
 
