@@ -72,6 +72,7 @@ In cases where any one rule does not apply or cannot be implemented make best ef
      * Within the static/instance group put `readonly` first:
        - `readonly`
        - writable (non-`readonly`)
+ 17. Prefer using extension methods to static utility methods when possible. [Example](CSharp-17.cs)
 
 ## C\# - Models
 
